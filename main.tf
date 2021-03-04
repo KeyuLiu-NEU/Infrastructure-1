@@ -316,7 +316,9 @@ resource "aws_iam_policy" "CodeDeploy-EC2-S3" {
             "Action": [
                 "s3:PutObject",
                 "s3:Get*",
-                "s3:List*"
+                "s3:List*",
+                "s3:DeleteBucket",
+                "s3:DeleteObject"
             ],
             "Resource": [            
                  "*"
